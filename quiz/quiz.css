@@ -1,0 +1,106 @@
+
+
+.jumbotron{
+  height:500px;
+    border-radius: 50% !important;
+    background: rgb(32, 64, 77) !important;
+    color: #fff;
+
+}
+
+.jumbotron .form-group{
+  position: relative;
+ top: 50%;
+ -webkit-transform: translateY(-50%);
+ -ms-transform: translateY(-50%);
+ transform: translateY(-50%);
+}
+
+
+.btn{
+  background-color: orange;
+  color:#fff;
+}
+
+#quizBody{
+  text-align: center;
+}
+
+#energy{
+  width:50%;
+  display: block;
+  margin:0 auto;
+
+}
+
+.custom-radio .custom-control-label::before{
+  background-color: orange;
+opacity:.7;
+border:.5px solid rgba(2, 19, 13, 0.3);
+margin-top:.35em;
+}
+
+.custom-control-label::after{
+  background-color: orange;
+  border-radius: 50%;
+  margin-top:.35em;
+}
+.jumbotron label{
+  font-size: 1.5em;
+}
+
+
+
+
+/* change range input slider appearance */
+.slider{
+  -webkit-appearance: none; /*override default css*/
+  appearance:none;
+  background-color:rgb(44, 121, 164) ;
+  border-radius: 10px;
+  height:20px;
+  cursor:grabbing;
+  outline:none;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 30px; /* Set a specific slider handle width */
+  height: 30px; /* Slider handle height */
+  background: orange;
+  border-radius: 100%;
+
+}
+
+.slider::-moz-range-thumb {
+  width: 30px; /* Set a specific slider handle width */
+  height: 30px; /* Slider handle height */
+  background: #15267c;
+  border-radius: 100%;
+}
+
+
+#energyJumbo{
+  display: none;
+
+}
+
+#kidsJumbo{
+  display:none;
+
+}
+
+#barWrap{
+  height:500px;
+  text-align: center;
+  display: none;
+  margin-bottom: 2em;
+}
+
+.progress{
+  margin: auto;
+
+}
+#quizResult, #quizResultImg,#startOverBtn{
+  display:none;
+}

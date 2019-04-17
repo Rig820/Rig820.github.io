@@ -1,0 +1,56 @@
+body{
+    background: #3c0001 !important;
+  /* background-image: url('bone.jpg');
+  background-repeat: repeat;
+  background-size: 10%; */
+}
+#main{
+  width:50%;
+  text-align: center;
+
+  color:#fff;
+}
+.breedRow img{
+  height:150px;
+  border-radius:100%;
+  border:1px solid black;
+  display: block;
+
+}
+.breedRow h1{
+  margin-left:1em;
+  line-height: 150px;
+  vertical-align: middle;
+  text-align: left;
+  width:250px;
+  color: #fff;
+
+}
+.breedRow a{
+  display:inline-flex;
+  color:#000;
+
+}
+@media only screen and (max-width:768px){
+  #main{
+    width:100%;
+  }
+}
+
+html body a:hover{
+  text-decoration: none;
+  color:black;
+}
+
+.navbar, .footer{
+  background-color: #BE9A59 !important;
+  color:white !important;
+}
+.navbar-brand, .nav-link,  .navbar button{
+  color:#fff !important;
+
+}
+
+.navbar button{
+  border-color: #FFF;
+}

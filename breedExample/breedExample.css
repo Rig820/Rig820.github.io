@@ -1,0 +1,52 @@
+body{
+  background-image: linear-gradient(to top,#A3A3A1,#BEBDBB);
+
+}
+
+/* //change header font size to 4em */
+.header h1{
+
+  font-size: 4em;
+
+}
+/* add margin and center header */
+.header{
+  margin-bottom:5em;
+  text-align: center;
+  font-family: 'ZCOOL XiaoWei', serif !important;
+}
+.header p, .stats p{
+  font-size: 1.2rem;
+}
+
+/* add margin to stats class */
+.stats{
+  margin-bottom:5em;
+}
+
+/* if screen is less than 768px iconRow, InfoRow width 100% */
+@media only screen and (max-width:768px){
+ #iconRow, #InfoRow{
+   width:100%;
+
+ }
+}
+
+/* add padding around images in the icon class */
+ .icon img{
+   padding:4px;
+ }
+
+
+/* hide nextinfo and nextnextinfo to start */
+#groomingInfo, #trainingInfo{
+  display:none;
+}
+
+
+/* changes the health/grooming/training icon background to orange and sets */
+/* the border radius to 20px */
+.iconBackgroundOrange{
+border-radius:20px;
+ background-color:#f4a442;
+}

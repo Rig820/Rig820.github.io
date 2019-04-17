@@ -1,0 +1,103 @@
+/* set margins for menu */
+.menu .row{
+  margin-top:1em;
+  margin-bottom: 5em;
+}
+
+/* position anchor text within menu row */
+.menu .row a{
+  display: block;
+  position: absolute;
+  text-align: center;
+  bottom: -20px;
+  font-size: 1.5rem;
+  color:black;
+  text-decoration: none;
+
+  width:100%;
+}
+
+/* set anchor text postion within menu when screen size is 768 or below */
+@media only screen and (max-width:768px){
+  .menu .row a{
+    width: auto;
+    bottom: 25%;
+    left:0;
+  }
+}
+/* set background, padding, height and cursor for small,medium,large, and giant menus */
+.menu .small, .menu .medium, .menu .large, .menu .giant{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+padding: 0px;
+height:300px;
+cursor:pointer;
+}
+
+
+/* set image and border for small menu */
+.menu .small{
+  background-image: url("indexPics/pugSmall.jpg");
+
+border-width:0px 1px 0px 0px;
+border-style: solid;
+
+}
+
+
+
+/* set image and border for medium menu */
+.menu .medium{
+  background-image: url("indexPics/beagleMedium.jpg");
+
+border-width:0px 1px 0px 0px;
+border-style: solid;
+
+}
+/* set image and border for large menu */
+.menu .large{
+  background-image: url("indexPics/labLarge.jpg");
+  border-width:0px 1px 0px 0px;
+  border-style: solid;
+
+}
+/* set background image for giant menu */
+.menu .giant{
+  background-image: url("indexPics/greatDaneGiant.jpg");
+
+}
+
+/* set background image/ positioning/cursor/padding and border for the small,medium,large
+and giant options in menu when screen is 768 or smaller */
+@media only screen and (max-width:768px){
+ .menu .small,.menu .medium,.menu .large, .menu .giant{
+   border-width:0px 0px 1px 0px;
+   border-style: solid;
+   border-color: right;
+   height:200px;
+ }
+}
+
+/* set image height for dog pictures */
+.doggos img{
+  height:200px;
+
+}
+
+/* text center and margin control per row of dog images */
+.doggos .row{
+  margin-bottom: 3em;
+  text-align: center;
+}
+/* remove text decorations and change color for anchors under dog pics */
+.doggos .row a{
+  text-decoration: none;
+color:#606e82;
+}
+
+
+.dropdown-item img{
+  height:35px;
+  width:35px;
+}

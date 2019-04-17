@@ -1,0 +1,54 @@
+/* change footer background color */
+.footer{
+  background-color: #222222;
+
+
+  }
+  /* set h6 color and alignment within footer-email sign up */
+  .footer h6{
+    color:#fff;
+    text-align: center;
+  }
+  /* set static footer height for screens over 768 */
+  @media only screen and (min-width:768px){
+    .footer {
+      height:350px;
+    }
+  }
+
+  /* space out lines within footer */
+.footer .row{
+  line-height:2.5;
+
+}
+/* remove text decoration and set color for anchors in footer */
+.footer  a{
+text-decoration: none;
+color:#fff;
+
+}
+/* enlarge the text for the list headers within the footer */
+#dogCareHead, #dogAdoptHead , #moreExamplesHead {
+
+  font-size: 1.3em;
+}
+/* change the cursor to pointer for the plus/minus signs in the footer */
+.footer i{
+  cursor:pointer;
+}
+/* hopefully this will center the email form within the footer\ */
+#emailForm{
+  display: inline-block;
+  width:100%;
+}
+.footer form{
+  text-align: center;
+}
+.footer form input{
+  width:50%;
+}
+
+/* .links{
+  margin-left:5%;
+  margin-right:5%;
+} */

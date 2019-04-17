@@ -1,0 +1,132 @@
+body{
+  background-image: linear-gradient(to top,blue ,lightblue);
+  height:100%;
+}
+#todo{
+  margin-bottom:2rem;
+  font-family: 'Lobster', cursive;
+  font-size: 3rem;
+}
+
+
+thead, tr{
+  border-bottom:2px solid #fff;
+
+}
+.items{
+  width:80%;
+  color:gray;
+}
+
+.check, .trash{
+  text-align: center;
+    width:10%;
+    border-left:1px solid #fff;
+}
+.jumbotron{
+  height:700px;
+  overflow: auto;
+  background-image: linear-gradient( #cc5500,orange);
+  color:#fff;
+
+}
+
+#addItemCol h1{
+  text-align: right;
+  margin-bottom:2rem;
+  font-family: 'Lobster', cursive;
+  font-size: 3rem;
+
+}
+
+/* make the font-size of the list smaller on smaller screen */
+@media only screen and (max-width:768px){
+  #addItemCol h1, #addItem i, #list h3, #todo{
+
+    font-size: 1.5rem !important;
+  }
+}
+
+#addItem, .check, .trash{
+  cursor: pointer;
+}
+
+td input{
+  border:none;
+  background:transparent;
+  width:100%;
+  color:#fff;
+  font-variant: small-caps;
+}
+
+/* no outline when inside of input */
+input[type="text"], input[type="password"], textarea, select {
+    outline: none;
+}
+
+
+#addItem i{
+  font-size: 2rem;
+}
+
+
+.completed{
+  color:rgb(81, 22, 39);
+  text-decoration: line-through;
+}
+
+::placeholder{
+  color:rgb(184, 206, 219);
+  opacity: 1;
+}
+
+.footer{
+  background: transparent !important;
+
+}
+
+
+.dropdown-menu{
+background:lightblue !important;
+  border-radius: 5px 25px 5px 25px !important;
+
+}
+
+
+.leftNav{
+  float: left;
+}
+
+#sideNav{
+  display: none;
+font-size: 2em;
+
+}
+@media only screen and (max-width:768px){
+  #sideNav{
+    display: none;
+  font-size: 1em;
+
+  }}
+
+
+#sideNavIconsOnly{
+font-size: 1.5em;
+
+}
+
+
+
+#sideNav h3{
+  text-decoration: underline;
+text-align: center;
+color:#fff;
+}
+
+.leftNav a, .leftNav a:hover{
+  color:#fff;
+}
+
+#sideNav a:hover{
+  color:#cc5500;
+}

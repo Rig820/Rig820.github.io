@@ -1,0 +1,9 @@
+#signInForm{
+  width:50%;
+  margin:auto;
+
+}
+.modal-header #signInModalTitle{
+  text-align:center !important;
+  width:100%;
+}

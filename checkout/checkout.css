@@ -1,0 +1,12 @@
+
+.list-group-item{
+justify-content: space-between !important;
+
+}
+.total{
+  color:#2ead39;
+}
+
+.row .form-check i{
+  font-size: 2rem;
+}

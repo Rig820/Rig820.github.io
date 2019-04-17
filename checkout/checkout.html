@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../signInModal.css">
+    <title>Checkout</title>
+  </head>
+  <body>
+
+    <!-- start navbar -->
+        <nav class='navbar navbar-expand-lg navbar-dark bg-dark'>
+          <img src="../indexPics/brandDog.png" style="width:25px;height:25px;" alt="">
+          <a class="navbar-brand" href="../index.html">Dogs</a>
+
+          <button class="navbar-toggler custom-toggler"  type="button" data-toggle="collapse" data-target="#navbaritems" aria-controls="navbaritems" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" ></span>
+          </button>
+
+          <div class="collapse navbar-collapse"  id="navbaritems">
+
+
+            <div class="navbar-nav">
+              <!-- small breeds dropdown -->
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkSmall" data-toggle="dropdown">
+            Small Breeds
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkSmall">
+            <a class="dropdown-item" href="smallList.html">All</a>
+            <a class="dropdown-item" href="../breedExample/breedExample.html">Dachshund</a>
+            <a class="dropdown-item" href="../breedExample/breedExample.html">Boston</a>
+            <a class="dropdown-item" href="../breedExample/breedExample.html">Etc...</a>
+            <a class="dropdown-item" href="../breedExample/breedExample.html">Etc...</a>
+            <a class="dropdown-item" href="../breedExample/breedExample.html">Etc...</a>
+          </div>
+
+            </div>
+            <!-- medium breeds dopdown -->
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkMedium" data-toggle="dropdown">
+            Medium Breeds
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkMedium">
+            <a class="dropdown-item" href="smallList.html">All</a>
+            <a class="dropdown-item" href="../breedExample/breedExample.html">Bulldog</a>
+            <a class="dropdown-item" href="../breedExample/breedExample.html">Beagle</a>
+            <a class="dropdown-item" href="../breedExample/breedExample.html">Etc...</a>
+            <a class="dropdown-item" href="../breedExample/breedExample.html">Etc...</a>
+            <a class="dropdown-item" href="../breedExample/breedExample.html">Etc...</a>
+          </div>
+
+            </div>
+
+            <!-- large breeds dropdown -->
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkLarge" data-toggle="dropdown">
+            Large Breeds
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkLarge">
+            <a class="dropdown-item" href="smallList.html">All</a>
+            <a class="dropdown-item" href="../breedExample/breedExample.html">Labrador Retriever</a>
+            <a class="dropdown-item" href="../breedExample/breedExample.html">Pointer</a>
+            <a class="dropdown-item" href="../breedExample/breedExample.html">Etc...</a>
+            <a class="dropdown-item" href="../breedExample/breedExample.html">Etc...</a>
+            <a class="dropdown-item" href="../breedExample/breedExample.html">Etc...</a>
+          </div>
+
+            </div>
+
+            <!-- giant breeds dropdown -->
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkGiant" data-toggle="dropdown">
+            Giant Breeds
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkGiant">
+            <a class="dropdown-item" href="smallList.html">All</a>
+            <a class="dropdown-item" href="../breedExample/breedExample.html">Newfoundland</a>
+            <a class="dropdown-item" href="../breedExample/breedExample.html">Great Dane</a>
+            <a class="dropdown-item" href="../breedExample/breedExample.html">Etc...</a>
+            <a class="dropdown-item" href="../breedExample/breedExample.html">Etc...</a>
+            <a class="dropdown-item" href="../breedExample/breedExample.html">Etc...</a>
+          </div>
+
+            </div>
+
+            </div>
+            <div class="navbar-nav ml-auto">
+              <button id="signIn" type="button" class="btn btn-outline-info"  data-toggle="modal" data-target="#signInModal"  style="margin-right:.5em;" name="button">Sign In</button>
+
+              <!-- nav search bar -->
+              <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-info" type="submit">Search</button>
+      </form>
+            </div>
+            </div>
+          </nav>
+
+
+          <!-- bootstrap modal for sign in button -->
+            <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header"> <!--modal header-->
+                    <h5 class="modal-title" id="signInModalTitle">Enter Username and Password</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <!--button to close modal-->
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- sign in form -->
+                    <form class="" action="index.html" method="post">
+                      <div id="signInForm" class="form-group">
+                      <label for="userName">USERNAME</label>
+                      <input class="form-control" type="text" name="userName" placeholder="User123">
+                      <label for="password">PASSWORD</label>
+                      <input class="form-control" type="password" name="password" placeholder="*********">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Sign In</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+      <!-- end navbar -->
+
+
+<div class="container" id="home">
+<h1 style="text-align:center;text-decoration:underline;">Checkout</h1>
+
+  <div class="row ">
+    <!-- start col for billing and payment info -->
+    <div class="col-md-8 order-2 order-md-1 col-sm-12">
+      <!-- header row -->
+      <div class="row">
+        <h3>Billing Address</h3>
+
+      </div>
+      <!-- start information form -->
+    <div class="form-group">
+
+      <!-- info row 1 -->
+      <div class="row">
+        <div class="col-md-6">
+          <label for="firstName">First Name</label>
+          <input type="text" name="firstName" class="form-control" id="firstName" placeholder="First" required>
+
+        </div>
+        <div class="col-md-6">
+          <label for="lastName">Last Name</label>
+          <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Last" required>
+
+        </div>
+
+      </div><!-- end row 1 -->
+
+    <!-- info row two -->
+    <div class="row">
+      <div class="col-12">
+        <label for="address1">Address</label>
+        <input type="text" class="form-control" id="address1" name="address1" placeholder="123 Fake St" required>
+
+      </div>
+
+    </div><!-- end row 2 -->
+
+    <!-- row three -->
+    <div class="row">
+      <div class="col-12">
+        <label for="address2">Address<small> (Optional)</small></label>
+        <input type="text" class="form-control" id="address2" name="address2" placeholder="Apt. 3">
+
+      </div>
+
+    </div><!-- end row 3 -->
+
+    <!-- row four -->
+    <div class="row">
+      <div class="col-md-4">
+        <label for="city">City/Town</label>
+        <input type="text" class="form-control" id="city" name="city" placeholder="Bigtown" required>
+
+      </div>
+      <div class="col-md-4">
+        <label for="state">State</label>
+        <select class="form-control" id="state" name="state" required>
+          <option value="">AK</option> <option value="">AL</option> <option value="">AR</option>
+          <option value="">AZ</option> <option value="">CA</option> <option value="">CO</option>
+          <option value="">CT</option> <option value="">DE</option> <option value="">FL</option>
+          <option value="">GA</option> <option value="">HI</option> <option value="">ID</option>
+          <option value="">IL</option> <option value="">IN</option> <option value="">IA</option>
+          <option value="">KS</option> <option value="">KY</option> <option value="">LA</option>
+          <option value="">MA</option> <option value="">MD</option> <option value="">ME</option>
+          <option value="">MI</option> <option value="">MN</option> <option value="">MS</option>
+          <option value="">MO</option> <option value="">MT</option> <option value="">NE</option>
+          <option value="">NV</option> <option value="">NH</option> <option value="">NJ</option>
+          <option value="">NM</option> <option value="">NY</option> <option value="">NC</option>
+          <option value="">ND</option> <option value="">OH</option> <option value="">OK</option>
+          <option value="">OR</option> <option value="">PA</option> <option value="">RI</option>
+          <option value="">SC</option> <option value="">SD</option> <option value="">TN</option>
+          <option value="">TX</option> <option value="">UT</option> <option value="">VT</option>
+          <option value="">VA</option> <option value="">WA</option> <option value="">WV</option>
+          <option value="">WI</option> <option value="">WY</option>
+
+      </select>
+
+      </div>
+      <div class="col-md-4">
+        <label for="zip">City/Town</label>
+        <input type="text" class="form-control" id="zip" name="zip" placeholder="00000" required>
+
+      </div>
+
+    </div><!-- end row 4-->
+
+<!-- row five -->
+<div class="row">
+  <div class="col-12">
+    <label for="email">Email</label>
+    <input type="email" name="email" placeholder="you@you.com" id="email" class="form-control" required>
+    <small>We will never share your email.</small>
+
+  </div>
+
+</div><!-- end row 5 -->
+
+<!-- row six -->
+<div class="row">
+  <div class="col-12">
+    <div class="form-check">
+
+
+    <input type="checkbox" name="shipping" class="form-check-input" id="shippingCheck">
+  <label for="shipping" class="form-check-label">Shipping address same as billing address?</label>
+</div>
+<div class="form-check">
+
+
+<input type="checkbox" name="saveInfo" class="form-check-input" id="saveInfo">
+<label for="saveInfo" class="form-check-label">Save your information?</label>
+</div>
+</div>
+</div> <!-- end row 6 -->
+<!-- end billing address info section -->
+
+<!-- start payment info section -->
+<!-- paymeny header row -->
+<div class="row">
+  <div class="col-12">
+    <h3 style="margin-top:2rem;">Payment Information</h3>
+    </div>
+</div><!-- end header row -->
+
+<!-- row one -->
+<div class="row">
+  <div class="col-12">
+  <div class="form-check">
+<input class="form-check-input" type="radio" name="paymentType" id="creditCard" >
+<label class="form-check-label" for="paymentType">Credit Card</label>
+</div>
+
+<div class="form-check">
+<input class="form-check-input" type="radio" name="paymentType" id="paypal" >
+<label class="form-check-label" for="paymentType">Paypal</label>
+</div>
+
+<div class="form-check">
+<input class="form-check-input" type="radio" name="paymentType" id="amazonPay" >
+<label class="form-check-label" for="paymentType"><i class="fab fa-apple-pay"></i></label>
+</div>
+  </div>
+</div><!-- end row 1 -->
+
+<!-- row 2 -->
+<div class="row">
+  <div class="col-md-6 col-sm-12">
+    <label for="cardName">Name on Card</label>
+    <input type="text" name="cardName" class="form-control" id="cardName" value="" placeholder="First Last" required>
+  </div>
+  <div class="col-md-6 col-sm-12">
+    <label for="cardNum">Credit Card Number</label>
+    <input type="text" name="cardNum" class="form-control" id="cardNum" value="" placeholder="0123123423453456" required>
+  </div>
+
+</div><!-- end row 2 -->
+<!-- row three -->
+<div class="row">
+  <div class="col-md-3 col-sm-6">
+    <label for="expiration">Expiration</label>
+    <input type="text" name="expiration" class="form-control" id="expiration" value="" placeholder="00/00/0000" required>
+  </div>
+  <div class="col-md-3 col-sm-6">
+    <label for="cvv">CVV</label>
+    <input type="text" name="cvv" class="form-control" id="cvv" value="" placeholder="000" required>
+  </div>
+</div><!-- end row 3 -->
+
+<!-- row four -->
+<div class="row">
+  <div class="col-12">
+    <button type="submit" name="continue" class="btn btn-primary w-100" style="margin-top:2rem;">Continue To Review Order</button>
+  </div>
+
+</div>
+
+  </div><!-- end form-group -->
+</div><!-- end billing and payment col -->
+
+
+
+
+<!-- start cart col -->
+<div class="col-md-4 order-1 order-md-2 col-sm-12 order">
+    <!-- cart header row -->
+    <div class="row">
+      <div class="col-12">
+        <h3>Cart</h3>
+      </div>
+    </div><!-- end header row -->
+    <!-- start row for item/price list -->
+      <div class="row">
+        <div class="col-12">
+          <ul class="list-group">
+            <li class="list-group-item d-flex">
+              <div >
+                <h5>Item One</h5>
+                <small>Item description</small>
+              </div>
+              <div class="text-muted"><h3>$<span class="price">12</span></h3></div>
+            </li>
+
+            <li class="list-group-item d-flex">
+              <div >
+                <h5>Item Two</h5>
+                <small>Item description</small>
+              </div>
+              <div class="text-muted"><h3>$<span class="price">18</span></h3></div>
+            </li>
+
+            <li class="list-group-item d-flex">
+              <div >
+                <h5>Item Three</h5>
+                <small>Item description</small>
+              </div>
+              <div class="text-muted"><h3>$<span class="price">2</span></h3></div>
+            </li>
+
+            <li class="list-group-item d-flex total">
+              <div >
+                <h3>Total</h3>
+              </div>
+              <div ><h3 id="totalPrice"></h3></div>
+            </li>
+
+
+
+
+          </ul>
+        </div>
+
+      </div><!-- end list row -->
+
+    </div><!-- end header row -->
+
+
+
+
+  </div><!-- end cart col -->
+
+  </div>
+</div>
+
+
+
+
+
+    <!-- start footer -->
+    <div class="footer">
+
+
+    <div class="container " >
+
+
+      <h6>Sign Up To Recieve More Dog Info</h6>
+
+      <div id="emailForm" >
+
+
+      <form >
+        <input type="email" id="emailSignUp" placeholder="Email Address"><button type="submit" name="submitEmail"><i class="fas fa-angle-right"></i></button>
+      </form>
+      </div>
+    <!-- row one -->
+    <div class="row">
+      <!-- column one -->
+    <div class="col-sm-12 col-md-4" id="dogCareCol" >
+    <a  data-toggle="collapse" href="#care" id="dogCareHead" >
+        Dog Care
+    </a>
+    <!-- add plus and minus signs -->
+    <i class="fas fa-minus minusSign"  style="color:#fff;"></i>
+     <i class="fas fa-plus plusSign"  style="color:#fff;"></i>
+
+    <div class="collapse show" id="care">
+      <ul class="list-unstyled footList">
+        <li class="list-item"><a href="../daycare/pricing.html">Doggy Day Care (Pricing Page Example)</a></li>
+        <li class="list-item"><a href="http://www.buffalolaundromutt.com/">Dog Spa</a></li>
+        <li class="list-item"><a href="https://chewy.com">Pet Supplies</a></li>
+      </ul>
+    </div>
+    </div>
+
+
+    <!-- column two -->
+    <div class="col-sm-12 col-md-4" id="dogAdoptCol" >
+    <a  data-toggle="collapse" href="#adopt" id="dogAdoptHead"   >
+        Adoption
+    </a>
+    <!-- add plus and minus signs -->
+    <i class="fas fa-minus minusSign"  style="color:#fff;"></i>
+     <i class="fas fa-plus plusSign"  style="color:#fff;"></i>
+
+    <div class="collapse show" id="adopt">
+      <ul class="list-unstyled footList">
+        <li class="list-item"><a href="https://yourspca.org/">SPCA</a></li>
+        <li class="list-item"><a href="https://www.adoptapet.com/dog-adoption">Adopt a Pet</a></li>
+        <li class="list-item"><a href="https://www.adoptapet.com/dog-adoption">PetFinder</a></li>
+      </ul>
+    </div>
+    </div>
+    <!-- column three -->
+    <div class="col-sm-12 col-md-4" id="moreExamplesCol" >
+    <a  data-toggle="collapse" href="#moreExamples" id="moreExamplesHead"  >
+        More Page Examples
+    </a>
+    <!-- add plus and minus signs -->
+    <i class="fas fa-minus minusSign"  style="color:#fff;"></i>
+    <i class="fas fa-plus plusSign"  style="color:#fff;"></i>
+
+    <div class="collapse show" id="moreExamples">
+      <ul class="list-unstyled footList">
+        <li class="list-item"><a href="../quiz/quiz.html">Which Dog Are You?</a></li>
+        <li class="list-item"><a href="#home">Checkout Example</a></li>
+        <li class="list-item"><a href="../match/match.html">Memory!</a></li>
+        <li class="list-item"><a href="../todo/todo.html">To-Do</a></li>
+      </ul>
+    </div>
+    </div>
+
+
+    </div>
+    </div>
+</div>
+
+
+        <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
+      <script src="checkout.js">
+
+      </script>
+      <script src="../footer.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+    </html>
