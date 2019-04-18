@@ -65,6 +65,7 @@ background: rgb(99, 32, 56) !important;
   backface-visibility: hidden;
   top:0;
   left:0;
+  transform: rotateX(0deg);   /* need for firefox otherwise when card flips its just a mirrored image of the front */
 }
 
 .frontCard {
