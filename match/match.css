@@ -70,6 +70,7 @@ background: rgb(99, 32, 56) !important;
 
 .frontCard {
   z-index: 2;
+  -webkit-transform: rotateY(0deg);
 
 }
 .frontCard img{
